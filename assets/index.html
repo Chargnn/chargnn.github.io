@@ -50,7 +50,7 @@
         },800);
     },1500);
     $.getJSON("blog.json", function(blog){
-        if(blog.length == 0){
+        if(!blog.length){
             return document.getElementById("blog_section").style.display = "none";
         }
         for(var i = 0; i < blog.length; i++){
